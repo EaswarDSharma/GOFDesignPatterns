@@ -10,7 +10,8 @@ public class Driver {
 
         Notification notification = new SMSNotification();
 
-        notification.sendNotification(attributes);
+        notification.sendNotification(attributes); // here we are using method from obj of type Notification not of SMSNotification class.
+        //so we can access method in the interface only not all method in SMSN class
 
         attributes = new NotificationAttributes(
                 "lava@gmail.com","kumar@gmail.com","Your Service OTP : 35654 valid for 10 minus"
